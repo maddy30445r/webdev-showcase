@@ -1,0 +1,568 @@
+@font-face {
+    font-family: "attila";
+    src: url(./attila.ttf);
+    
+    
+}
+@font-face {
+    font-family: "dancing";
+    src: url(./DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "havlock";
+    src: url(./havelock\ \(1\).otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #232025;
+
+   overflow-x: hidden;
+   
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.main{
+    
+    
+    
+    position: relative;
+}
+.nav{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    /* background-color: #222; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #d1d1d1;
+    z-index: 1000;
+    transition: all 1s  linear;
+    /* transition-delay: 1.4s; */
+}
+
+.nav h1{
+    margin-left: 80px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "attila";
+    letter-spacing: 8px;
+}
+.innav{
+    display: flex;
+    font-family: "attila";
+    gap: 50px;
+    margin-right: 70px;
+    text-transform: uppercase;
+    
+}
+.innav h2{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.innav i{
+    font-size: 23px;
+}
+/* .innav i:nth-of-type(2){
+    display: none;
+
+} */
+
+.fullscr{
+    transition: top 1s ease-out;
+    height: 100vh;
+    width: 100vw;
+    background-color: #d1d1d1;
+    display: hidden;
+    z-index: 10;
+    top: -20%;
+    position: absolute;
+    color: #2B2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.fullscr h1{
+    position: absolute;
+    left: 6%;
+    top: 18%;
+    font-family: "attila";
+    font-size: 13vw;
+    text-transform: uppercase;
+    letter-spacing: -1vw;
+    /* text-indent:2.1em; */
+}
+.fullscr .divs{
+    left: 8%;
+    top: 56%;
+    position: absolute;
+    display: flex;
+    gap: 13vw;
+    font-size: 1.5vw;
+    font-family: "montserrat";
+    font-weight: bolder;
+   
+
+}
+.fullscr .divs .left1{
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+.fullscr .divs .left1 span{
+    margin-bottom: -1vh;
+}
+.fullscr .divs .right1{
+    display: flex;
+    flex-direction: column;
+    
+
+    
+}
+.fullscr .divs .right1 span{
+    margin-bottom: -1vh;
+}
+
+.page1{
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    
+    color: #d1d1d1;
+    top: 10vh;
+
+}
+.page1 .left{
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    font-family: "attila";
+
+}
+.page1 .left h1{
+    font-size: 13vw;
+    text-transform: uppercase;
+    
+    letter-spacing: 20px;
+}
+.page1 .left h3{
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    font-size: 45px;
+    font-weight: 900;
+    color: #ADADAD;
+    line-height: .9;
+}
+.page1 .left h3 span{
+    left: 0;
+    position: absolute;
+}
+.right{
+    position: absolute;
+    right: 20%;
+    bottom: 37%;
+    font-family: "attila";
+    font-size: 14px;
+    color: #ADADAD;
+}
+.page2{
+    position: relative;
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    width: 100vw;
+   
+
+}
+.page2 img{
+    position: absolute;
+     /* translate(-50%,-50%); */
+    height: 100%;
+    width: 100%;
+    /* left: .8%; */
+    object-fit: cover;
+    scale: .9;
+}
+.page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    position: relative;
+    text-align: center;
+
+}
+.page3 span{
+    font-family: "dancing";
+}
+.page3 h1{
+    position: absolute;
+    transform-origin: bottom;
+    top: 30%;
+    left:16%;
+    transform: translate(-50%,50%) ;
+    font-size: 3.5vw;
+    white-space: nowrap;
+    font-family: "attila";
+    line-height: 1.3;
+    opacity: 0;
+    transform: rotateX(90deg);
+
+    
+}
+
+
+.trigger{
+    position: absolute;
+    top: 30%;
+}
+#line{
+    width: 23%;
+    position: absolute;
+    height: 2px;
+    left: 13%;
+    background-color: white;
+    bottom: 1%;
+}
+#available{
+    position: absolute;
+    bottom: 15px;
+    left: 30%;
+    font-family: "attila";
+    font-size: 12px;
+}
+.page5{
+    height: 80vh;
+    width: 100vw;
+    color:#D1D1D1;
+    position: relative;
+
+}
+.page5 h1{
+    position: absolute;
+    font-size: 8vw;
+    font-family: "attila";
+    left: 6%;
+    top: 20%;
+    line-height: 1;
+}
+.page6{
+    width: 100vw;
+    height: 30vh;
+    background-color: #2222;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    color: #d1d1d1;
+}
+.page6 .div1{
+    height: 100%;
+    font-size: 4vw;
+    width: 70%;
+    margin-left: 40px;
+    font-family: "attila";
+    border-right: 1px solid #d1d1d1;
+    line-height: .9;
+    padding: 60px 40px;
+
+}
+.page6 .div2{
+    padding: 60px 60px;
+    height: 100%;
+    width: 30%;
+    font-size: 1.5vw;
+    font-family: "attila";
+    
+}
+.page7{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://uploads-ssl.webflow.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif");
+    color: #d1d1d1;
+    position: relative;
+
+}
+.page7 .contain{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: "attila";
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+}
+.page7 h1{
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+
+}
+.page7 h3{
+    font-size: 1vw;
+    text-align: left;
+    width: 50%;
+    margin-left: 3vw;
+    /* margin-top: 40px; */
+    
+
+}
+.page7 img{
+    margin-top: 6vw;
+    position: absolute;
+    left: 48%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    transform: rotate(0);
+
+}
+.page8{
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+}
+.page8 .container2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 13vw;
+    font-family: "attila";
+    width: 100%;
+gap:-10px
+    /* background-color: #fff; */
+}
+.one1{
+    color: #D1D1D1;
+}
+.one2{
+    -webkit-text-stroke: 1px #D1D1D1;
+    color: transparent;
+}
+.onediv1{
+    transform: translateX(-100%);
+}
+.onediv{
+    margin-bottom:-10vh;
+}
+.onediv1{
+    margin-bottom: -10vh
+}
+.page9{
+    height: 100vh;
+    width: 100%;
+    background-color: #2222;
+    position: relative;
+
+}
+.page9 .div9-1{
+    position: absolute;
+    color: #d1d1d1;
+    /* background-color: red; */
+    top: 15%;
+    left: 50%;
+    translate: -50%;
+    font-size: 3vw;
+    font-family: "attila";
+    text-align: center;
+}
+.page9 .div9-1 span{
+    font-family: "dancing";
+}
+
+.div9-2{
+    /* background-color: #fff; */
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2.7vw;
+    font-family: "attila";
+    width: 100%;
+    /* justify-content: space-around; */
+    height: 50%;
+    top: 30%;
+    align-items: center;
+    color: #d1d1d1;
+    /* pointer-events: none; */
+}
+.yes{
+    /* background-color: red; */
+    height: 100%;
+    width: 24%;
+    position: absolute;
+    left: 20%;
+    padding: 120px 100px;
+    /* pointer-events: all; */
+    
+    
+}
+.no{
+    /* pointer-events: all; */
+    /* background-color: red; */
+    height: 100%;
+    padding: 120px 200px;
+    width: 28%;
+    position: absolute;
+    left: 55%;
+}
+
+
+.yes img{
+    pointer-events: none;
+    rotate: 10deg;
+    position: absolute;
+    opacity: 0;
+    left: 10%;
+    /* bottom: ; */
+    z-index: -1;
+    transition: all linear .5s;
+    transition-property: cubic-bezier(0.16, 1, 0.29, 0.99);
+    border-radius: 10px;
+}
+.no img{
+    pointer-events: none;
+    rotate: 10deg;
+    border-radius: 10px;
+    position: absolute;
+    left: 10%;
+    z-index: -100;
+    opacity: 0;
+    transition: all linear .5s;
+    transition-property: cubic-bezier(0.16, 1, 0.29, 0.99);
+}
+/* .yes img:hover{
+    display: initial;
+
+} */
+
+
+
+.page10{
+    width: 100%;
+    height: 130vh;
+    background-color: #222;
+    position: relative;
+}
+
+.page10 .snack{
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translate(-50%,-50%);
+    color: #d1d1d1;
+    font-family: "attila";
+    font-size: 4vw;
+    /* background-color: red; */
+    /* width: 100%; */
+}
+
+.page10 .bottles{
+
+    position: absolute;
+    left: 43%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.page10 .bottles img{
+    transition: all 1s ease;
+}
+.page10 .bottles img:hover{
+    rotate: 13deg;
+    scale: 1.08;
+}
+#b3{
+    height: 28%;
+    width: 28%;
+    z-index: 200;
+    transform: translateY(-2.5vh);
+}
+#b2{
+    height: 25%;
+    width: 25%;
+    transform: translate(1vw,1vh);
+}
+#b4{
+    height: 25%;
+    width: 25%;
+    transform: translate(-.7vw,1vh);
+}
+#b1{
+    height: 22%;
+    width: 22%;
+    transform: translate(2vw,3vh);
+}
+#b5{
+    height: 22%;
+    width: 22%;
+    transform: translate(-1.2vw,3vh);
+    z-index: -3;
+}
+.page11{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+}
+
+.page4{
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+    position: relative;
+}
+.div4-1{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    gap: 1.5vw;
+    color: #d1d1d1;
+}
+.div4-1-2{
+    font-size: 5vw;
+    font-family: "havlock";
+    letter-spacing: -10px;
+    display: flex;
+    align-items: center;
+
+}
+.div4-1-2 .indiv:hover{
+    -webkit-text-stroke: 1px #d1d1d1;
+    color: transparent;
+}
+.div4-1-2 .indiv{
+    transition: all .4s ease-out;
+    cursor: pointer;
+}
+.div4-1-2 span{
+    font-size: .8vw;
+    margin-right: 10vw;
+    letter-spacing: 1px;
+    margin-left: 6vw;
+    /* margin-top: -200px; */
+    /* position: absolute; */
+    /* top: 20px; */
+    /* margin-bottom: 500px; */
+    
+}
