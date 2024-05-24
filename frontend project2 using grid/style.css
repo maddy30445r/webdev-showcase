@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'atilla';
+    src: url(./Atilla\ Normal.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 25% 45%;
+    grid-template-rows: 25% 55% 20%;
+    background-color: #d4d8de;
+}
+.right{
+    grid-column: 3/4;
+    /* background-color: violet; */
+    grid-row: 1/4;
+    padding: 30px 80px 30px 30px;
+    /* padding-right: 80px; */
+}
+.left-top-right h6{
+    display: none;
+}
+.right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.left-top-left{
+    /* background-color: greenyellow; */
+    padding: 30px 20px 20px 40px;
+    grid-column: 1/2;
+    
+}
+.left-top-right{
+    line-height: 1.3;
+    text-align: end;
+    font-weight: 100;
+    /* background-color:crimson; */
+    grid-column: 2/3;
+    padding: 30px;
+    justify-self: right;
+    font-family:atilla ;
+    font-size: .8vw;
+
+}
+.left-center{
+    padding: 2vw 2vw 2vw 6vw;
+    /* background-color: lightcoral; */
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.left-center h1{
+
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: atilla;
+    font-weight: 100;
+    line-height: 1;
+}
+.left-center h1:nth-child(2n){
+    text-align: center;
+    transform: translateX(-5vw);
+}
+.left-bottom{
+    /* background-color:burlywood; */
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 40px;
+    font-family: atilla;
+    font-size: .8vw;
+}
+.left-bottom p{
+    width: 50%;
+}
+.square{
+    height:15px;
+    width: 15px;
+    rotate:45deg;
+    background-color: black;
+}
+.left-top-right h5:nth-child(1){
+    /* color: white;
+     */
+     margin-bottom: 3vw;
+
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%,-50%);
+   
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow i{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.search{
+    position: absolute;
+    top: 5%;
+    right: 1%;
+   
+     color:black;
+     font-size: 1vw;
+    
+ 
+}
+
+@media (max-width:600px) {
+    .main{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 30% 10%;
+        background-color: #d4d8de;
+    }
+    .right{
+        grid-column: 1/3;
+        /* background-color: violet; */
+        grid-row: 4;
+        /* display: flex; */
+       
+        
+        /* padding-right: 80px; */
+        padding: 10px 10px;
+    }
+    
+    .right video{
+        height: 55vh;
+       
+        /* justify-content: center; */
+        /* align-items: center; */
+        
+    }
+    .left-top-left{
+        /* background-color: greenyellow; */
+        padding: 20px 20px 20px 20px;
+        grid-column: 1;
+        
+    }
+    .left-top-right{
+        
+        grid-column: 2;
+        padding: 15px 20px 20px 20px;
+        justify-self: normal;
+        
+        font-size: .8vw;
+    
+    }
+    .left-top-right h5{
+        display: none;
+    }
+    .left-top-right h6{
+        display: block;
+        font-size: 3.5vw;
+    }
+    .left-center{
+        padding: 4vw 4vw 4vw 20vw;
+        /* font-size: 10vw; */
+       
+    }
+    .left-center h1{
+    
+        font-size: 9.5vw;
+        
+       
+    }
+    
+    .left-bottom{
+       
+        padding: 10px 40px;
+        font-size: 2vw;
+    }
+    .left-bottom p{
+        width: 70%;
+    }
+    
+    
+    .arrow{
+        position: absolute;
+        top: 48%;
+        left: 45%;
+        rotate: 90deg;
+        padding: 5px;
+        /* font-size: 2vw; */
+       
+    }
+    .arrow i{
+        font-size: 3vw;
+    }
+   
+    .search{
+        position: absolute;
+        top: 3%;
+        right: 14%;
+       
+         color:black;
+         font-size: 3.5vw;
+        
+     
+    }
+
+    
+}
