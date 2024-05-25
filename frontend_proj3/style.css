@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: 'atilla';
+    src: url(./Atilla\ Normal.ttf);
+}
+*{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:#FFFFFF;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 7% 28% 25% 40%;
+}
+.nav{
+    /* background-color: aqua; */
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 20px;
+    font-family: atilla;
+}
+.nav h5{
+    width: fit-content;
+    height: fit-content;
+}
+.nav i{
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+}
+
+.center1{
+    grid-column: 1/3;
+    /* background-color: beige; */
+}
+.center1 h1{
+    font-family: atilla;
+    font-size: 3.7vw;
+    font-weight: 100;
+    padding: 20px 0 10px 150px;
+    line-height: 1.2;
+}
+.center2-left{
+    /* background-color: blueviolet; */
+    position: relative;
+    /* padding: 3vw 0 0 7vw; */
+    /* width: 50%; */
+}
+.center2-left p{
+    width: 30%;
+    position: absolute;
+    left: 15%;
+    font-size: .9vw;
+    top: 20%;
+    font-family: atilla;
+}
+.center2-right{
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0 1vw 10vw;
+    font-family: atilla;
+    font-size: 1vw;
+    font-weight: 600;
+    /* position: relative; */
+}
+.center2-right .elem{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid black;
+    width: 90%;
+    padding: 10px 0;
+    /* positi1n: absolute; */
+    /* left: 30%; */
+}
+.center2-right .elem a{
+    color: black;
+    text-decoration:none
+    /* display: hidden; */
+
+
+}
+.center2-right .elem i {
+    font-size: 1.5vw;
+    display: none;
+    /* justify-self: end; */
+}
+.center2-right .elem:hover i{
+    display: initial;
+    
+    /* background-color: black; */
+}
+.center2-right .elem:hover a{
+    text-decoration: underline;
+}
+a:visited{
+    text-decoration: none;
+}
+.bottom{
+    grid-column: 1/3;
+    background-color: burlywood;
+    background: url(./Screenshot\ 2024-05-24\ 223215.png);
+    background-size: cover;
+    background-position: center;
+}
